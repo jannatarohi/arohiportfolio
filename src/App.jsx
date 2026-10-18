@@ -1,9 +1,40 @@
+import Home from "./Documentation/Home/Home"
+
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen gap-4 bg-base-200">
-      <h1 className="text-3xl font-bold text-primary">Tailwind & daisyUI Ready!</h1>
-      <button className="btn btn-accent">Click Me</button>
-    </div>
+    <div className="overflow-x-auto">
+      <Home />
+      <table border="1" className="table border">
+        {/* head */}
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Job</th>
+            <th>Favorite Color</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* row 1 */}
+          <tr>
+            <td>Arohi</td>
+            <td>Student</td>
+            <td>Blue</td>
+          </tr>
+          {/* row 2 */}
+          <tr>
+            <td>Hart Hagerty</td>
+            <td>Desktop Support Technician</td>
+            <td>Purple</td>
+          </tr>
+          {/* row 3 */}
+          <tr>
+            <td>Brice Swyre</td>
+            <td>Tax Accountant</td>
+            <td>Red</td>
+          </tr>
+        </tbody>
+      </table>
+    </div >
   )
 }
 
